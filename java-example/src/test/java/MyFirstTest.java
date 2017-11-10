@@ -12,13 +12,15 @@ public class MyFirstTest {
 
   private WebDriver driver;
   private WebDriverWait wait;
+
   @Before
-  public void start(){
+  public void start() {
     driver = new ChromeDriver();
     wait = new WebDriverWait(driver, 10);
   }
+
   @Test
-  public void myFirstTest(){
+  public void myFirstTest() {
     driver.get("http://www.google.com/");
     driver.findElement(By.name("q")).sendKeys("webdriver");
     driver.findElement(By.name("btnK")).click();
@@ -26,9 +28,10 @@ public class MyFirstTest {
   }
 
   @After
-  public void stop(){
+  public void stop() {
     driver.quit();
-    driver = null;}
+    driver = null;
+  }
 }
 
 
