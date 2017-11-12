@@ -12,7 +12,7 @@ public class TestBase {
   @Before
   public void start() {
     driver = new ChromeDriver();
-    wait = new WebDriverWait(driver, 10);
+    wait = new WebDriverWait(driver, 20);
   }
 
   @After

@@ -1,10 +1,8 @@
-import org.apache.commons.codec.language.bm.Languages;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 public class Zadanie7 extends TestBase {
 
@@ -15,14 +13,14 @@ public class Zadanie7 extends TestBase {
     driver.findElement(By.name("username")).sendKeys("admin");
     driver.findElement(By.name("password")).sendKeys("admin");
     driver.findElement(By.name("login")).click();
-   driver.findElement(By.linkText("Appearence")).click();
+    driver.findElement(By.linkText("Appearence")).click();
     assertEquals(driver.findElement(By.tagName("h1")).getText(), "Template");
     driver.findElement(By.linkText("Template")).click();
     assertEquals(driver.findElement(By.tagName("h1")).getText(), "Template");
     driver.findElement(By.linkText("Logotype")).click();
     assertEquals(driver.findElement(By.tagName("h1")).getText(), "Logotype");
-   driver.findElement(By.linkText("Catalog")).click();
-  assertEquals(driver.findElement(By.tagName("h1")).getText(), "Catalog");
+    driver.findElement(By.linkText("Catalog")).click();
+    assertEquals(driver.findElement(By.tagName("h1")).getText(), "Catalog");
     WebElement selected = driver.findElement(By.className("selected"));
     selected.findElement(By.linkText("Catalog")).click();
     assertEquals(driver.findElement(By.tagName("h1")).getText(), "Catalog");
@@ -65,12 +63,12 @@ public class Zadanie7 extends TestBase {
     assertEquals(driver.findElement(By.tagName("h1")).getText(), "Languages");
     driver.findElement(By.linkText("Storage Encoding")).click();
     assertEquals(driver.findElement(By.tagName("h1")).getText(), "Storage Encoding");
-     driver.findElement(By.linkText("Modules")).click();
+    driver.findElement(By.linkText("Modules")).click();
     assertEquals(driver.findElement(By.tagName("h1")).getText(), "Job Modules");
     driver.findElement(By.linkText("Background Jobs")).click();
     assertEquals(driver.findElement(By.tagName("h1")).getText(), "Job Modules");
     driver.findElement(By.linkText("Customer")).click();
-  assertEquals(driver.findElement(By.tagName("h1")).getText(), "Customer Modules");
+    assertEquals(driver.findElement(By.tagName("h1")).getText(), "Customer Modules");
     driver.findElement(By.linkText("Shipping")).click();
     assertEquals(driver.findElement(By.tagName("h1")).getText(), "Shipping Modules");
     driver.findElement(By.linkText("Payment")).click();
