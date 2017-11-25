@@ -4,7 +4,6 @@ import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
 
 public class Zadanie7 extends TestBase {
 
@@ -43,8 +42,9 @@ public class Zadanie7 extends TestBase {
           String naglowekPod = driver.findElement(By.tagName("h1")).getAttribute("innerText");
           System.out.println(naglowekPod);
         }
-      }}}
-
+      }
+    }
+  }
 
 
 }

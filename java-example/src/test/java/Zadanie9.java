@@ -72,12 +72,13 @@ public class Zadanie9 extends TestBase {
     List<String> listaStref = new ArrayList<String>();
     List<String> bezSortowania = new ArrayList<String>();
     for (WebElement wiersz : tabelaStrefy) {
-      if (wiersz.isEnabled()){
-      if (wiersz.isSelected()) {
-        String strefa = wiersz.getText();
-        listaStref.add(strefa);
-        bezSortowania.add(strefa);
-      }}
+      if (wiersz.isEnabled()) {
+        if (wiersz.isSelected()) {
+          String strefa = wiersz.getText();
+          listaStref.add(strefa);
+          bezSortowania.add(strefa);
+        }
+      }
     }
     Collections.sort(listaStref);
     assertEquals(bezSortowania, listaStref);
@@ -89,13 +90,14 @@ public class Zadanie9 extends TestBase {
     listaStref = new ArrayList<String>();
     bezSortowania = new ArrayList<String>();
     for (WebElement wiersz : tabelaStrefy) {
-      if (wiersz.isEnabled()){
-      if (wiersz.isSelected()) {
-        String strefa = wiersz.getText();
-        listaStref.add(strefa);
-        bezSortowania.add(strefa);
+      if (wiersz.isEnabled()) {
+        if (wiersz.isSelected()) {
+          String strefa = wiersz.getText();
+          listaStref.add(strefa);
+          bezSortowania.add(strefa);
+        }
       }
-    }}
+    }
     Collections.sort(listaStref);
     assertEquals(bezSortowania, listaStref);
     driver.findElement(By.name("cancel")).click();
@@ -107,12 +109,13 @@ public class Zadanie9 extends TestBase {
     listaStref = new ArrayList<String>();
     bezSortowania = new ArrayList<String>();
     for (WebElement wiersz : tabelaStrefy) {
-      if (wiersz.isEnabled()){
-      if (wiersz.isSelected()) {
-        String strefa = wiersz.getText();
-        listaStref.add(strefa);
-        bezSortowania.add(strefa);
-      }}
+      if (wiersz.isEnabled()) {
+        if (wiersz.isSelected()) {
+          String strefa = wiersz.getText();
+          listaStref.add(strefa);
+          bezSortowania.add(strefa);
+        }
+      }
     }
     Collections.sort(listaStref);
     assertEquals(bezSortowania, listaStref);
