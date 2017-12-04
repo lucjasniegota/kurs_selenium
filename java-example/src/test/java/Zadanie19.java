@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-public class Zadanie15 extends TestBase {
+public class Zadanie19 extends TestBase {
 
   @Test
   public void litecartTest() {
